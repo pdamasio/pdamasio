@@ -6,21 +6,30 @@
 
 <style>
 
+/* =========================================
+   PÁGINA
+   ========================================= */
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
+
     background: transparent !important;
+
     font-family: Arial, sans-serif !important;
 }
 
 
-/* ===== PAINEL ===== */
+/* =========================================
+   PAINEL CINZA FIXO
+   ========================================= */
 
 .painel {
     position: fixed;
+
     top: 0;
     left: 0;
 
@@ -29,16 +38,19 @@ html, body {
 
     overflow: hidden;
 
-    background-color: rgba(30, 30, 30, 0.90) !important;
+    background: rgba(30, 30, 30, 0.90);
 
     box-sizing: border-box;
 }
 
 
-/* ===== ÁREA QUE ROLA ===== */
+/* =========================================
+   TEXTO QUE ROLA
+   ========================================= */
 
 .rolagem {
     position: absolute;
+
     top: 0;
     left: 0;
 
@@ -48,7 +60,9 @@ html, body {
 }
 
 
-/* ===== RESENHA ===== */
+/* =========================================
+   BLOCO DE CADA LIVRO
+   ========================================= */
 
 .resenha {
     width: 100%;
@@ -59,9 +73,9 @@ html, body {
 
     box-sizing: border-box;
 
-    font-family: Arial, sans-serif !important;
-
     color: white;
+
+    font-family: Arial, sans-serif !important;
 
     text-align: left;
 
@@ -71,51 +85,76 @@ html, body {
 }
 
 
-/* ===== CABEÇALHO ===== */
+/* =========================================
+   LIDOS EM 2026
+   ========================================= */
 
 .titulo {
     font-size: 38px;
+
     font-weight: bold;
 
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 
-/* ===== TÍTULO DOS LIVROS ===== */
+/* =========================================
+   TÍTULO DO LIVRO
+   ========================================= */
 
 .livro {
     font-size: 30px;
-    font-weight: normal;
+
+    font-weight: bold;
 
     line-height: 1.3;
 
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
 
-/* ===== ESTRELAS ===== */
+/* =========================================
+   ESTRELAS
+   ========================================= */
 
 .estrelas {
     font-size: 30px;
 
-    margin-bottom: 22px;
+    line-height: 1;
+
+    margin-bottom: 20px;
 
     letter-spacing: 2px;
 }
 
 
-/* ===== FRASES ===== */
+/* Estrelas que ficam ao lado do título */
+
+.estrelas-livro {
+    font-size: 26px;
+
+    margin-left: 5px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   FRASES DOS GAROTOS MORTOS
+   ========================================= */
 
 .frases {
     font-size: 24px;
 
-    line-height: 1.5;
+    line-height: 1.45;
 
-    margin-bottom: 28px;
+    margin-bottom: 22px;
 }
 
 
-/* ===== COMENTÁRIO ===== */
+/* =========================================
+   COMENTÁRIOS
+   ========================================= */
 
 .comentario {
     font-size: 25px;
@@ -124,14 +163,18 @@ html, body {
 }
 
 
-/* ===== ESPAÇO ENTRE LIVROS ===== */
+/* =========================================
+   ESPAÇO ENTRE OS LIVROS
+   ========================================= */
 
 .resenha + .resenha {
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 
-/* ===== ANIMAÇÃO ===== */
+/* =========================================
+   ANIMAÇÃO
+   ========================================= */
 
 @keyframes subir {
 
@@ -156,9 +199,9 @@ html, body {
     <div class="rolagem">
 
 
-        <!-- ==========================
-             OS 12 SIGNOS DE VALENTINA
-             ========================== -->
+        <!-- =====================================
+             LIVRO 1
+             ===================================== -->
 
         <div class="resenha">
 
@@ -166,13 +209,16 @@ html, body {
                 LIDOS EM 2026
             </div>
 
+
             <div class="livro">
                 – Os 12 Signos de Valentina
             </div>
 
+
             <div class="estrelas">
                 ⭐⭐⭐⭐⭐
             </div>
+
 
             <div class="comentario">
                 Foi muito agradável. Ri bastante e esperava um final
@@ -183,19 +229,17 @@ html, body {
         </div>
 
 
-        <!-- ==========================
-             GAROTOS MORTOS
-             ========================== -->
+        <!-- =====================================
+             LIVRO 2
+             ===================================== -->
 
         <div class="resenha">
 
             <div class="livro">
                 – Garotos Mortos
+                <span class="estrelas-livro">⭐⭐⭐⭐</span>
             </div>
 
-            <div class="estrelas">
-                ⭐⭐⭐⭐
-            </div>
 
             <div class="frases">
                 &gt; Garotos Mortos não contam mentiras<br>
@@ -203,6 +247,7 @@ html, body {
                 &gt; Garotos Mortos não contam segredos<br>
                 &gt; Garotos Mortos não sangram
             </div>
+
 
             <div class="comentario">
                 Gostei muito do final e do plot, principalmente da
