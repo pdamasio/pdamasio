@@ -2,32 +2,66 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <style>
+<style>
 
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background: transparent !important;
-        }
+/* ===== PÁGINA TRANSPARENTE ===== */
 
-        .lista {
-            position: absolute;
-            width: 100%;
-            animation: subir 20s linear infinite;
-        }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent !important;
+}
+
+
+/* ===== QUADRADO CINZA FIXO ===== */
+
+.painel {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    background: rgba(20, 20, 20, 0.85);
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* ===== TEXTO QUE ROLA ===== */
+
+.rolagem {
+    position: absolute;
+
+    width: 100%;
+
+    animation: subir 20s linear infinite;
+}
+
+
+/* ===== CONTEÚDO ===== */
 
 .resenha {
-    width: 90%;
+    width: 100%;
+
     margin: 0;
+
     padding: 40px 30px;
+
     box-sizing: border-box;
 
     font-family: Arial, sans-serif;
+
     color: white;
 
     text-align: left;
@@ -36,59 +70,57 @@
         2px 2px 4px rgba(0,0,0,0.9),
         -1px -1px 2px rgba(0,0,0,0.8);
 }
-        }
 
-        .titulo {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 25px;
-        }
 
-        .livro {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
 
-        .estrelas {
-            font-size: 32px;
-            margin-bottom: 25px;
-            letter-spacing: 3px;
-        }
 
-        .comentario {
-            font-size: 26px;
-            line-height: 1.45;
-        }
+.livro {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
-        @keyframes subir {
 
-            from {
-                transform: translateY(100vh);
-            }
+.estrelas {
+    font-size: 32px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
 
-            to {
-                transform: translateY(-100%);
-            }
 
-        }
+.comentario {
+    font-size: 26px;
+    line-height: 1.45;
+}
 
-    </style>
+
+/* ===== ANIMAÇÃO ===== */
+
+@keyframes subir {
+
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+
+}
+
+</style>
 </head>
 
+
 <body>
-.lista {
-    position: absolute;
-    width: 100%;
-    animation: subir 20s linear infinite;
 
-    /* ===== FUNDO DA LISTA ===== */
-    background: rgba(20, 20, 20, 0.85);
+<div class="painel">
 
-    border-radius: 15px;
-    padding: 10px 0;
-    box-sizing: border-box;
-}
-    <div class="lista">
+    <div class="rolagem">
 
         <div class="resenha">
 
@@ -113,6 +145,8 @@
         </div>
 
     </div>
+
+</div>
 
 </body>
 
