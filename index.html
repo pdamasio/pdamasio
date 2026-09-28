@@ -6,8 +6,6 @@
 
 <style>
 
-/* ===== PÁGINA TRANSPARENTE ===== */
-
 html, body {
     margin: 0;
     padding: 0;
@@ -18,10 +16,10 @@ html, body {
 }
 
 
-/* ===== QUADRADO CINZA FIXO ===== */
+/* PAINEL FIXO */
 
 .painel {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -30,33 +28,31 @@ html, body {
 
     overflow: hidden;
 
-    background: rgba(20, 20, 20, 0.85);
-
-    border-radius: 15px;
+    background-color: rgba(30, 30, 30, 0.90) !important;
 
     box-sizing: border-box;
 }
 
 
-/* ===== TEXTO QUE ROLA ===== */
+/* ÁREA QUE SE MOVIMENTA */
 
 .rolagem {
     position: absolute;
+    top: 0;
+    left: 0;
 
     width: 100%;
 
-    animation: subir 20s linear infinite;
+    animation: subir 25s linear infinite;
 }
 
 
-/* ===== CONTEÚDO ===== */
+/* CONTEÚDO */
 
 .resenha {
     width: 100%;
-
     margin: 0;
-
-    padding: 40px 30px;
+    padding: 45px 35px;
 
     box-sizing: border-box;
 
@@ -65,40 +61,49 @@ html, body {
     color: white;
 
     text-align: left;
-
-    text-shadow:
-        2px 2px 4px rgba(0,0,0,0.9),
-        -1px -1px 2px rgba(0,0,0,0.8);
 }
 
+
+/* TÍTULO */
 
 .titulo {
-    font-size: 36px;
+    font-size: 60px !important;
     font-weight: bold;
-    margin-bottom: 25px;
+
+    margin-bottom: 35px;
 }
 
+
+/* NOME DO LIVRO */
 
 .livro {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 42px !important;
+
+    margin-bottom: 25px;
 }
 
+
+/* ESTRELAS */
 
 .estrelas {
-    font-size: 32px;
-    margin-bottom: 25px;
-    letter-spacing: 3px;
+    font-size: 40px !important;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 4px;
 }
 
+
+/* COMENTÁRIO */
 
 .comentario {
-    font-size: 26px;
-    line-height: 1.45;
+    font-size: 32px !important;
+
+    line-height: 1.5;
 }
 
 
-/* ===== ANIMAÇÃO ===== */
+/* ROLAGEM */
 
 @keyframes subir {
 
@@ -113,19 +118,27 @@ html, body {
 }
 
 </style>
+
 </head>
 
 
 <body>
 
-<div class="painel">
+<div
+    class="painel"
+    style="
+        background-color: rgba(30, 30, 30, 0.90);
+        width: 100%;
+        height: 100%;
+    "
+>
 
     <div class="rolagem">
 
         <div class="resenha">
 
             <div class="titulo">
-                Lidos em 2026
+                LIDOS EM 2026
             </div>
 
             <div class="livro">
