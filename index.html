@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
@@ -29,14 +31,10 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     overflow: hidden;
-
     background: rgba(30, 30, 30, 0.65);
-
     box-sizing: border-box;
 }
 
@@ -49,10 +47,9 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
-
     animation: subir 35s linear infinite;
+    will-change: transform;
 }
 
 
@@ -62,17 +59,11 @@ html, body {
 
 .titulo {
     padding: 25px 30px 15px 30px;
-
     color: white;
-
     font-family: Arial, sans-serif !important;
-
     font-size: 38px;
-
     font-weight: bold;
-
     line-height: 1.2;
-
     text-align: left;
 
     text-shadow:
@@ -96,23 +87,14 @@ html, body {
 
 .item {
     width: 100%;
-
     padding: 10px 30px;
-
     box-sizing: border-box;
-
     color: white;
-
     font-family: Arial, sans-serif !important;
-
     font-size: 30px;
-
     font-weight: bold;
-
     line-height: 1.35;
-
     text-align: left;
-
     white-space: nowrap;
 
     text-shadow:
@@ -122,13 +104,13 @@ html, body {
 
 
 /* =========================================
-   ANIMAÇÃO
+   ANIMAÇÃO CORRIGIDA
    ========================================= */
 
 @keyframes subir {
 
     from {
-        transform: translateY(100%);
+        transform: translateY(100vh);
     }
 
     to {
@@ -140,37 +122,25 @@ html, body {
 </style>
 </head>
 
-
 <body>
 
 <div class="painel">
 
     <div class="rolagem">
 
-
-        <!-- =====================================
-             TÍTULO
-             ===================================== -->
+        <!-- TÍTULO -->
 
         <div class="titulo">
             RANKING – LIDOS EM 2026
         </div>
 
-
-        <!-- =====================================
-             LIVROS
-             ===================================== -->
+        <!-- LIVROS -->
 
         <div class="grupo">
 
             <div class="item">
                 – Os 12 Signos de Valentina ⭐⭐⭐⭐
             </div>
-
-        </div>
-
-
-        <div class="grupo">
 
             <div class="item">
                 – Garotos Mortos não contam segredos ⭐⭐⭐⭐
@@ -188,126 +158,71 @@ html, body {
                 – Garotos Mortos não contam mentiras ⭐⭐⭐⭐
             </div>
 
-        </div>
-
-
-        <div class="grupo">
-
             <div class="item">
                 – Sou Puta, Doutor ⭐⭐⭐
             </div>
-
-        </div>
-
-
-        <div class="grupo">
 
             <div class="item">
                 – Bosque de Cristal ⭐⭐⭐⭐
             </div>
 
-        </div>
-
-
-        <div class="grupo">
-
             <div class="item">
                 – Coração de Queijo ⭐⭐⭐⭐
             </div>
-
-        </div>
-
-
-        <div class="grupo">
 
             <div class="item">
                 – Memórias de um Crime (conto) ⭐⭐
             </div>
 
-        </div>
-
-
-        <div class="grupo">
-
             <div class="item">
                 – Contrato de Guardanapo ⭐⭐⭐⭐
             </div>
 
-        </div>
-
-
-        <div class="grupo">
-
             <div class="item">
-                – Eu, um elevador velho e meu vizinho serial killer <br>⭐⭐⭐
+                – Eu, um elevador velho e meu vizinho serial killer ⭐⭐⭐
             </div>
-
-        </div>
-
-
-        <div class="grupo">
 
             <div class="item">
                 – Deus de Neon 🌟🌟🌟🌟🌟
             </div>
 
-        </div>
-<div class="grupo">
-
             <div class="item">
                 – Ídolo Elétrico ⭐⭐⭐⭐
             </div>
-
-        </div>
-       
-       <div class="grupo">
 
             <div class="item">
                 – Beleza Perversa ⭐⭐⭐⭐
             </div>
 
-        </div>
-
-        <div class="grupo">
-
             <div class="item">
                 – The Awakening Code ⭐⭐⭐
             </div>
-
-        </div>
-    
-
-        <div class="grupo">
 
             <div class="item">
                 – Fruto Podre ⭐⭐⭐
             </div>
 
-        </div>
-
-
-        <div class="grupo">
-
             <div class="item">
                 – Psicologia de um Sociopata ⭐⭐⭐
             </div>
-
-        </div>
-
-
-        <div class="grupo">
 
             <div class="item">
                 – A Herdeira dos Olhos Reais ⭐⭐⭐⭐
             </div>
 
-        </div>
+            <div class="item">
+                – 24 Horas em Athenas Antiga ⭐⭐⭐
+            </div>
 
+            <div class="item">
+                – Sociopath - A memoir ⭐⭐⭐⭐
+            </div>
+
+        </div>
 
     </div>
 
 </div>
 
 </body>
-
 </html>
